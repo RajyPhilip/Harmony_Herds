@@ -1,0 +1,211 @@
+.milking-main-page {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  .milking-page-bg {
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("https://static.toiimg.com/photo/99894606.cms");
+  }
+  .milking-contents {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    z-index: 9;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 60%;
+
+    .milking-contents-main-title {
+      font-size: 24px;
+    }
+    .view-hide {
+      visibility: hidden;
+    }
+    .milking-view-history {
+      color: #5151ec;
+      text-decoration: underline;
+      width: fit-content;
+    }
+
+    .btn-common-properties {
+      width: 118px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 400;
+    }
+    .btn-common-properties:hover {
+      background-color: #0056b3;
+    }
+
+    .outercircle {
+      height: 230px;
+      width: 230px;
+      border-radius: 50%;
+      background-color: white;
+      font-size: 32px;
+      .innercircle {
+        height: 210px;
+        width: 210px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .bg {
+      background-image: linear-gradient(red, blue);
+    }
+    .animation-bg {
+      background: linear-gradient(
+        -45deg,
+        rgb(27, 66, 238),
+        rgb(255, 30, 0),
+        rgb(187, 70, 90),
+        cyan
+      );
+      background-size: 200% 200%;
+      animation: gradientCircular 1s ease infinite;
+    }
+    @keyframes gradientCircular {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  }
+}
+
+//modal milking page
+.main-modal-box {
+  .modal-heading {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0px;
+  }
+  .milk-modal-btns-container {
+    justify-content: end;
+    padding: 12px 0px 6px 0px;
+
+    .cancel-btn {
+      border-radius: 4px;
+      border: 1px solid #5151ec;
+      background: #fff;
+      color: #5151ec;
+      padding: 4px 10px;
+      cursor: pointer;
+    }
+
+    .add-btn {
+      border-radius: 4px;
+      background: #5151ec;
+      border: 1px solid #5151ec;
+      color: #fff;
+      padding: 4px 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+.measurement-box {
+  position: absolute;
+  border: none;
+  outline: none;
+  right: 10px;
+  top: 12px;
+  color: #b2b2b2;
+  word-spacing: 6px;
+  background-color: inherit;
+}
+.milk-form-input {
+  border-radius: 8px;
+  width: 100%;
+  background-color: #f7f7f7;
+  border: 1px solid #eeeeee;
+  padding-right: 60px;
+}
+.quantity-pipe {
+  position: absolute;
+  color: #b2b2b2;
+  right: 12px;
+  top: 10px;
+}
+.custom-modal-class {
+  border-radius: 12px;
+  padding: 50px;
+}
+.main-modal-wrapper {
+  width: 100%;
+  height: 100%;
+
+  div {
+    padding: 4px !important;
+    border-radius: 4px !important;
+  }
+}
+.main-modal-wrapper > div:first-child {
+  width: 100vw;
+  height: 100vh;
+  position: relative !important;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-modal-wrapper > div:first-child > div {
+  max-width: 600px;
+  padding: 20px !important;
+  border-radius: 12px !important;
+  margin: 0px !important;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  .milking-main-page {
+    .milking-contents {
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .milking-main-page {
+    .milking-contents {
+      margin: 0;
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 0px;
+      .outercircle {
+        height: 200px;
+        width: 200px;
+
+        .innercircle {
+          height: 180px;
+          width: 180px;
+        }
+      }
+    }
+  }
+}
