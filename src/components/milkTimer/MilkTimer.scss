@@ -7,7 +7,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url("https://static.toiimg.com/photo/99894606.cms");
+    background-image: url("https://d2k6zobmg5lufr.cloudfront.net/assets%2F20240429205551-home-animal.webp");
   }
   .milking-contents {
     font-size: 12px;
@@ -193,10 +193,8 @@
 @media only screen and (max-width: 480px) {
   .milking-main-page {
     .milking-contents {
-      margin: 0;
-      width: 100%;
+      width: calc(100vw - 40px);
       box-sizing: border-box;
-      border-radius: 0px;
       .outercircle {
         height: 200px;
         width: 200px;

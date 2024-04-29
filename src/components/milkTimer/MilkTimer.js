@@ -109,8 +109,6 @@ const MilkTimer = () => {
     audio.src = music1;
     setMilkingStarted(false);
     setCurrentDuration(0);
-    audio.src = music1;
-    setMilkingStarted(false);
     setProcessEndDialogOpen(false);
     setInputValue(0);
   };
