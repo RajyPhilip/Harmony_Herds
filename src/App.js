@@ -1,5 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import "./App.css";
+import "./helpers/helper_classes.scss";
+import "./App.scss";
 import History from "./components/history/History";
 import Home from "./components/home/Home";
 import MilkTimer from "./components/milkTimer/MilkTimer";
