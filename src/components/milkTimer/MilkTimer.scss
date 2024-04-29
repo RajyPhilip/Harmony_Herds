@@ -174,11 +174,11 @@
 }
 
 .main-modal-wrapper > div:first-child > div {
-  max-width: 600px;
+  max-width: 400px;
   padding: 20px !important;
   border-radius: 12px !important;
   margin: 0px !important;
-  width: 100% !important;
+  width: calc(100vw - 40px) !important;
   box-sizing: border-box;
 }
 
