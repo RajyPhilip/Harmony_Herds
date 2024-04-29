@@ -69,7 +69,7 @@ const History = () => {
       </div>
       <div className="milk-history-bottom-container">
         <div className=" milk-history-grid  milk-history-header-row    bold">
-          <p className=" d-none768 header-row-item bold py-12 px-8">#</p>
+          <p className="header-row-item bold py-12 px-8">#</p>
           <p className="header-row-item bold py-12 px-8">Date</p>
           <p className="d-none768 header-row-item bold py-12 px-8">
             Song Played
@@ -103,7 +103,7 @@ const History = () => {
                       key={index}
                       className="milk-history-grid  flex-row quote-status-list-header-row xetgo-font-tag cursor-pointer "
                     >
-                      <p className=" d-none768 px-8 py-12">{index + 1}</p>
+                      <p className=" px-8 py-12">{index + 1}</p>
 
                       <p className="py-12 px-8">{detail.date}</p>
                       <p className="d-none768 py-12 px-8">
