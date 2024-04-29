@@ -1,0 +1,132 @@
+.milk-history-content-page {
+  background-color: #cbd0f4;
+  height: 100vh;
+  .milk-history-upper-container {
+    color: #6610a6;
+  }
+  .milk-history-bottom-container {
+    background: white;
+    border-radius: 8px;
+
+    .milk-history-grid {
+      display: grid;
+      grid-template-columns: 0.3fr repeat(6, 1fr);
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 400;
+
+      .enquiry-tag {
+        background-color: #fdcd0847;
+        color: #834f00;
+        width: fit-content;
+        border-radius: 8px;
+      }
+
+      .status-tag {
+        border-radius: 6px;
+        width: fit-content;
+        height: fit-content;
+      }
+
+      .forward-arrow-box {
+        background-color: #ededff;
+        height: 24px;
+        width: 24px;
+        border-radius: 4px;
+      }
+
+      .status-container {
+        padding-right: 24px;
+      }
+    }
+
+    .milk-history-header-row {
+      border-bottom: 1px solid #e5e5e5;
+      color: #4a4a4a;
+
+      .header-row-item {
+        color: #111111;
+      }
+    }
+    .milk-history-wrapper-scrollable-container {
+      height: calc(100vh - 104px);
+      overflow-y: scroll;
+      position: relative;
+
+      .milk-status-empty {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+      }
+    }
+    .milk-status-list-container {
+      z-index: 9;
+      position: absolute;
+      width: 100%;
+      .expanded-container {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+      }
+      .activeCard {
+        background-color: #f7f7ff;
+      }
+    }
+    .milk-history-scrollable-back-img {
+      position: absolute;
+      background-image: url("https://images.unsplash.com/photo-1571859266574-785bf3cde89a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMGNvd3xlbnwwfHwwfHx8MA%3D%3D");
+      height: 100%;
+      opacity: 0.1;
+      width: 100%;
+    }
+
+    .milk-history-wrapper-scrollable-container::-webkit-scrollbar {
+      width: 2px;
+    }
+    .milk-history-wrapper-scrollable-container::-webkit-scrollbar-thumb {
+      background-color: rgb(0, 0, 89);
+    }
+
+    .Status-card-hover :hover {
+      background-color: #f7f7ff;
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .milk-history-content-page {
+    .milk-history-bottom-container {
+      .milk-history-grid {
+        grid-template-columns: 0.3fr repeat(4, 1fr) 1.5fr 1fr;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .milk-history-content-page {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    .milk-history-bottom-container {
+      .milk-history-grid {
+        grid-template-columns: repeat(3, 1fr) 1.5fr 1fr;
+      }
+      .d-none768 {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .milk-history-content-page {
+    .milk-history-bottom-container {
+      .milk-history-grid {
+        grid-template-columns: 1fr 1fr 1.5fr 0.8fr;
+      }
+      .d-none480 {
+        display: none;
+      }
+    }
+  }
+}
